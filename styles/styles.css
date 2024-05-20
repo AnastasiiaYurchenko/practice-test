@@ -301,6 +301,44 @@ img {
   transform: scale(1.05);
 }
 
+/* Hero Section */
+.hero {
+  background-image: url(../images/hero-bg.webp);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 41px 20px 52px 20px;
+}
+
+.hero__wrap-pre-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 38px;
+}
+
+.hero__pre-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.hero__list {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero__title {
+  width: 538px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
 /* Aside */
 
 .events {
