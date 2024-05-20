@@ -10,8 +10,45 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo link">Logo</a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link link"><img src="./images/gift.png" alt="Gift" width="24" />Bonuses</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link link"><img src="./images/phone.png" alt="Phone" width="24" />App</a>
+            </li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link link">Live</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link link">Sports</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link link">More</a></li>
+          </ul>
+        </nav>
+        <div class="lang-auth-wrapper">
+          <div class="custom-select-wrapper">
+            <div class="custom-select">
+              <div class="custom-select__trigger">
+                <span><img src="./images/flag-AT.png" alt="Flag" width="24" /> AT</span>
+                <div class="arrow"></div>
+              </div>
+              <div class="custom-options">
+                <span class="custom-option selected" data-value="AT"> <img src="./images/flag-AT.png" alt="Flag" width="24" /> AT </span>
+                <span class="custom-option" data-value="EN"> <img src="./images/flag-EN.png" alt="Flag" width="24" /> EN </span>
+                <span class="custom-option" data-value="DE"> <img src="./images/flag-DE.png" alt="Flag" width="24" /> DE </span>
+              </div>
+            </div>
+          </div>
+
+          <ul class="site-auth list">
+            <li class="site-auth__item"><a class="site-auth__link link" href="#">Sign up</a></li>
+            <li class="site-auth__item"><a class="site-auth__link link" href="#">Log in</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main></main>
-    <footer></footer>
+    <script src="./js/lang.js"></script>
   </body>
 </html>
