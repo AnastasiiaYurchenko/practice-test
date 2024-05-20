@@ -27,7 +27,6 @@ body {
   background-image: var(--body-bg-color);
   background-size: 2114px 2114px;
   background-position: right 90px;
-  /* background-repeat: repeat-y; */
 }
 
 /*  Reset */
@@ -76,12 +75,12 @@ img {
   width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
-  /* display: flex;
-  gap: 20px; */
 }
 
 .section {
   margin: 10px 0;
+  border-radius: 6px;
+  background-color: var(--section-bg-color);
 }
 
 /*  Header */
@@ -249,4 +248,107 @@ img {
 .site-auth__item:nth-child(2) .site-auth__link {
   box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
   background: #0fa810;
+}
+
+/* Main */
+
+.container__flex {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+.container__left {
+  width: 925px;
+}
+
+.container__right {
+  width: 295px;
+  margin-top: 20px;
+}
+
+/* Pre-Hero */
+
+.pre-hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 25px 20px;
+  margin-top: 20px;
+}
+
+.pre-hero__text {
+  width: 666px;
+}
+
+.pre-hero__link {
+  border-radius: 16px;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: justify;
+  color: var(--white-text-color);
+  background-color: var(--navs-bg-color);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 300ms ease-in-out;
+}
+
+.pre-hero__link:hover {
+  transform: scale(1.1);
+}
+
+/* Aside */
+
+.events {
+  background-color: var(--header-bg-color);
+  padding-top: 20px;
+}
+
+.events__link {
+  text-transform: uppercase;
+  color: var(--btn-text-color);
+  border-radius: 60px;
+  padding: 4px 16px 4px 4px;
+  background: #ec622b;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: fit-content;
+  margin: 0 auto 20px auto;
+}
+
+.events__icon-wrap {
+  background-color: var(--section-bg-color);
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events__list {
+  background-color: var(--section-bg-color);
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.events__text {
+  padding: 8px 12px;
+  color: #7c7c7c;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 300ms ease-in-out;
+}
+
+.events__text:hover {
+  background-color: var(--header-bg-color);
+  color: var(--btn-text-color);
 }
