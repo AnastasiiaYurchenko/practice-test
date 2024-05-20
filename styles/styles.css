@@ -417,15 +417,20 @@ img {
   background: #fff;
 }
 
-.sections__link:hover .sections__link::before {
+.sections__link::before {
   content: '';
   position: absolute;
   display: block;
   top: 0;
   left: 0;
-  border-radius: 0 0 6px 6px;
+  border-radius: 6px;
   width: 98px;
   height: 8px;
+  background: transparent;
+  transition: all 250ms ease-in-out;
+}
+
+.sections__link:hover::before {
   background: #2e9344;
 }
 
