@@ -72,7 +72,7 @@ img {
 }
 
 .container {
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -302,10 +302,12 @@ img {
 }
 
 /* Hero Section */
+
 .hero {
   background-image: url(../images/hero-bg.webp);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding: 41px 20px 52px 20px;
 }
 
@@ -337,6 +339,37 @@ img {
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--white-text-color);
+  margin-bottom: 16px;
+}
+
+.hero__link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.28;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--btn-text-color);
+  border: 1px solid var(--white-text-color);
+  border-radius: 16px;
+  padding: 14px 75px;
+  /* width: 214px; */
+  box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
+  background: #ec622b;
+  margin-bottom: 10px;
+  transition: all 300ms ease-in-out;
+}
+
+.hero__link:hover:hover {
+  transform: scale(1.05);
+}
+
+.hero__after-link-text {
+  font-weight: 400;
+  font-size: 6px;
+  line-height: 1.5;
+  color: var(--white-text-color);
+  width: 214px;
+  text-align: center;
 }
 
 /* Aside */
