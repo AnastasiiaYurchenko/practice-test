@@ -245,7 +245,8 @@ img {
   gap: 16px;
 }
 
-.site-auth__link {
+.auth-link {
+  box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
   font-weight: 600;
   font-size: 16px;
   line-height: 1.28;
@@ -256,17 +257,15 @@ img {
   transition: all 300ms ease-in-out;
 }
 
-.site-auth__link:hover {
+.auth-link:hover {
   transform: scale(1.1);
 }
 
-.site-auth__item:nth-child(1) .site-auth__link {
-  box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
+.auth-link--orange {
   background: #ec622b;
 }
 
-.site-auth__item:nth-child(2) .site-auth__link {
-  box-shadow: 0 4px 18px 0 rgba(14, 24, 17, 0.25);
+.auth-link--green {
   background: #0fa810;
 }
 
@@ -587,6 +586,68 @@ img {
 .facts__description {
   width: 587px;
   padding-left: 24px;
+}
+
+/* Sportsbook Section */
+
+.title--margin24 {
+  margin-bottom: 24px;
+}
+
+.sportsbook__text {
+  margin-bottom: 24px;
+}
+
+.sportsbook__textLast {
+  margin-bottom: 40px;
+}
+
+.unordered__list {
+  margin-bottom: 24px;
+}
+
+.unordered__item {
+  display: flex;
+  gap: 7px;
+  align-items: start;
+}
+
+.unordered__item:not(:last-child),
+.ordered__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.unordered__item::before {
+  content: '-';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.ordered__list {
+  counter-reset: list-counter;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 24px;
+}
+
+.ordered__item {
+  counter-increment: list-counter;
+  position: relative;
+  padding-left: 31px;
+}
+
+.ordered__item::before {
+  content: counter(list-counter);
+  position: absolute;
+  left: 9px;
+  color: #2e9344;
+}
+
+.sportsbook__link {
+  margin-top: 32px;
 }
 
 /* Aside */
