@@ -97,7 +97,7 @@ img {
 }
 
 .section {
-  margin: 10px 0;
+  margin: 20px 0;
   border-radius: 6px;
   background-color: var(--section-bg-color);
 }
@@ -516,12 +516,22 @@ img {
   transform: scale(1.05);
 }
 
+/* After-Bonus Section */
+
+.after-bonus {
+  padding: 32px 20px;
+}
+
+.title--bigger {
+  font-size: 48px;
+}
+
 /* Aside */
 
 .events {
   background-color: var(--header-bg-color);
   padding-top: 20px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 6px;
 }
 
 .events__link {
