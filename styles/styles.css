@@ -285,6 +285,8 @@ img {
 }
 
 .container__right {
+  top: 80px;
+  position: sticky;
   width: 295px;
   margin-top: 100px;
 }
