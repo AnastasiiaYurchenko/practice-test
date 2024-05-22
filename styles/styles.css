@@ -849,6 +849,42 @@ img {
   rotate: 180deg;
 }
 
+/* Footer Section */
+
+.footer {
+  padding: 35px 20px 36px 20px;
+}
+
+.footer__top-wrap {
+  display: flex;
+  align-items: start;
+  gap: 16px;
+}
+
+.footer__top-wrap + p {
+  margin-bottom: 26px;
+}
+
+.footer__text {
+  margin-bottom: 32px;
+  width: 782px;
+}
+
+.footer__bottom-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo--bigger {
+  font-size: 32px;
+  padding: 6px 30px;
+}
+
+.logo--longer {
+  padding: 6px 81px;
+}
+
 /* Aside */
 
 /* Events */
